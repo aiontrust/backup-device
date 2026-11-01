@@ -1,0 +1,23 @@
+# Keys and local settings never go in git
+.env
+*.key
+*.pem
+*-key.json
+secrets/
+
+# Models, maps and offline archives are large; they're downloaded onto the device
+models/
+*.gguf
+*.zim
+*.pmtiles
+*.onnx
+
+# Local data
+data/
+*.db
+*.db-journal
+
+# Python
+__pycache__/
+*.pyc
+.venv/
